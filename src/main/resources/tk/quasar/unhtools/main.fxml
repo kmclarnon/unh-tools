@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<?import javafx.geometry.Insets?>
+<GridPane xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tk.quasar.unhtools.MainController">
+
+  <padding>
+    <Insets top="25" right="25" bottom="25" left="25"/>
+  </padding>
+
+   <columnConstraints>
+     <ColumnConstraints percentWidth="20"/>
+     <ColumnConstraints percentWidth="80"/>
+   </columnConstraints>
+
+   <rowConstraints>
+     <RowConstraints percentHeight="20"/>
+     <RowConstraints percentHeight="40"/>
+     <RowConstraints percentHeight="40"/>
+   </rowConstraints>
+
+   <children>
+     <Button onAction="#onChooseInput" text="Choose Input" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+     <Label fx:id="input" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+     <Button fx:id="run" disable="true" onAction="#onRun" text="Run" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+     <Label fx:id="output" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+   </children>
+</GridPane>
