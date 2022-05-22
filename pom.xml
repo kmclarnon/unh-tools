@@ -14,7 +14,7 @@
     <junit.version>5.8.1</junit.version>
     <dep.jackson.version>2.13.3</dep.jackson.version>
     <dep.jackson-databind.version>2.13.3</dep.jackson-databind.version>
-    <main.class>tk.quasar.unhtools/tk.quasar.unhtools.Application</main.class>
+    <main.class>tk.quasar.unhtools.Launcher</main.class>
   </properties>
 
   <dependencies>
@@ -150,6 +150,7 @@
                   <mainClass>${main.class}</mainClass>
                 </transformer>
               </transformers>
+              <createDependencyReducedPom>false</createDependencyReducedPom>
             </configuration>
           </execution>
         </executions>

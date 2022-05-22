@@ -1,0 +1,1 @@
+'C:\Program Files\Eclipse Adoptium\jdk-17.0.3.7-hotspot\bin\jpackage.exe' --input empty/ --name UnhTools --main-jar unh-tools-1.0-SNAPSHOT.jar
